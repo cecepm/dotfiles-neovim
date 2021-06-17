@@ -8,12 +8,13 @@ return packer.startup(
 
         -- color related stuff
         use {"npxbr/gruvbox.nvim", requires = {"rktjmp/lush.nvim"}}
+        use "siduck76/nvim-base16.lua"
         use "norcalli/nvim-colorizer.lua"
 
         -- lang stuff
         use "nvim-treesitter/nvim-treesitter"
 
-        use "lewis6991/gitsigns.nvim"
+        use {'lewis6991/gitsigns.nvim', requires = {'nvim-lua/plenary.nvim'}}
         use "akinsho/nvim-bufferline.lua"
         use "glepnir/galaxyline.nvim"
         use "windwp/nvim-autopairs"
